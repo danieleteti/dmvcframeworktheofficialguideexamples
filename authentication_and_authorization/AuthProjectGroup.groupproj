@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A8AF3B1B-25D1-4F7C-9B85-60DC9373B47B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="http_basic_authentication\HTTPBasicAuthSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="jwt_authentication\JWTAuthSample.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HTTPBasicAuthSample">
+        <MSBuild Projects="http_basic_authentication\HTTPBasicAuthSample.dproj"/>
+    </Target>
+    <Target Name="HTTPBasicAuthSample:Clean">
+        <MSBuild Projects="http_basic_authentication\HTTPBasicAuthSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HTTPBasicAuthSample:Make">
+        <MSBuild Projects="http_basic_authentication\HTTPBasicAuthSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JWTAuthSample">
+        <MSBuild Projects="jwt_authentication\JWTAuthSample.dproj"/>
+    </Target>
+    <Target Name="JWTAuthSample:Clean">
+        <MSBuild Projects="jwt_authentication\JWTAuthSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JWTAuthSample:Make">
+        <MSBuild Projects="jwt_authentication\JWTAuthSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HTTPBasicAuthSample;JWTAuthSample"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HTTPBasicAuthSample:Clean;JWTAuthSample:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HTTPBasicAuthSample:Make;JWTAuthSample:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
