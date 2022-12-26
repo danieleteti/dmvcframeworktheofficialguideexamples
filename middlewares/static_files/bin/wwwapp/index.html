@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>DMVCFramework - the official guide</title>
+    <meta name="description" content="DMVCFramework - the official guide">
+    <meta name="author" content="Daniele Teti">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row" style="margin-top: 10%">
+            <div class="twelve columns">
+                <img src="images/dmvcframework_logobig.png">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5%">
+            <div class="one-third column">
+                <h3>Static Files Middleware</h3>
+                <p>In this example DMVCFramework is used to provide APIs and a web application as well. The Web Application files are delivered by the built-in DMVCFramework web server using the powerful StaticFilesMiddleware.</p>
+            </div>
+            <div class="two-thirds column">
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <td id="customer_name"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Contact</th>
+                            <td id="customer_contact"></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td id="customer_address"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Primary buttons -->
+                <button id="btnGetCustomer" class="u-pull-right button-primary">Show Customer Info</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-third column">&nbsp;</div>
+            <div class="two-thirds column">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="app.js"></script>
+</body>
+
+</html>
