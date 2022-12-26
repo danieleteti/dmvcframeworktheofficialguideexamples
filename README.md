@@ -3,7 +3,7 @@ This repository contains all the "DMVCFramework-The Official Guide" examples upd
 
 DelphiMVCFramework is a Delphi framework which allows to create powerful RESTful and JSON-RPC servers without effort At the time of writing DMVCFramework is the most popular open source Delphi project on [Github](https://github.com/danieleteti/delphimvcframework) with the biggest developers community. After the collaboration with an editor for my first 3 books (Delphi Cookbook Series), I decided to switch and start a new self publishing adventure. After 2 years of hard work the first edition of [*DelphiMVCFramework - the official guide*](https://leanpub.com/delphimvcframework) has been published in august 2020 targeting version dmvcframework-3.2.1-carbon.
 
-While the content is still relevant for the current version, some example could not compile because some methods has been deprecated and then removed or just classes/types have been moved between different units. For these reasons I decided to update all the examples and release them as open source.
+While the content is still relevant for the current version, some examples could not compile because some methods has been deprecated and then removed or just classes/types have been moved between different units. For these reasons I decided to update all the examples and release them as open source.
 
 Please, consider that current framework version could offer a faster/shorter/easier way to do what the examples shown in 2020. The reason of this repository is to just make examples compatible with the current version of dmvcframework.
 
