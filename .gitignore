@@ -69,3 +69,5 @@ __recovery/
 modules/
 mvcactiverecord_primer/mvcactiverecord_primer1.res
 mvcactiverecord_primer/mvcactiverecord_primer.res
+jsonrpc/jsonrpc2/jsonrpc2.res
+jsonrpc/jsonrpc1/jsonrpc1.res
