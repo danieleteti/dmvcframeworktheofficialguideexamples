@@ -85,3 +85,4 @@ municipal_library_api_ver_3_ex/ModelSupport_MunicipalLibraryVer3/Entities/defaul
 municipal_library_api_ver_3_ex/ModelSupport_MunicipalLibraryVer3/
 municipal_library_api_ver_3_ex/LibrarySupport/
 python_tests/.vscode/
+*.log

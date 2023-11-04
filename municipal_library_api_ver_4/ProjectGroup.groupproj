@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FEBC6E63-514A-4D5F-8131-827CB96D100B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MunicipalLibraryVer4.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MunicipalLibraryVer4">
+        <MSBuild Projects="MunicipalLibraryVer4.dproj"/>
+    </Target>
+    <Target Name="MunicipalLibraryVer4:Clean">
+        <MSBuild Projects="MunicipalLibraryVer4.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MunicipalLibraryVer4:Make">
+        <MSBuild Projects="MunicipalLibraryVer4.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MunicipalLibraryVer4"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MunicipalLibraryVer4:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MunicipalLibraryVer4:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
